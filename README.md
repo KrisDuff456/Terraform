@@ -12,7 +12,7 @@ You will need to have the required software installed on your system either on L
   4. You will need to install AWS IAM Authenticator installed 
   
 # AWS Policys for User
-  
+Make sure the user your using has these policys attached to them so that they can run the terraform scripts
   * AutoScalingFullAccess
 	
   * AmazonEKSClusterPolicy
