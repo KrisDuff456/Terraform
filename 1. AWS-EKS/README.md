@@ -4,6 +4,7 @@ Here is a basic setup for a AWS Cluster using terraform scrips to automate the p
 # Start
 You will need to first setup your AWS Credentials using awscli commands on your terminal, the command you will use is:
 * aws configure
+
 There you can take your access keys and secret keys provided by aws and have it stored within your system instead of on the scripts. This will be stored as a credentials file in your .aws folder and will communicate with terraform when you start running the scripts. 
 
 After you have configured your aws go into the directory of the terraform scripts and start with the following command:
