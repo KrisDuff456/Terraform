@@ -10,3 +10,19 @@ You will need to have the required software installed on your system either on L
   2. You will need to have the awscli installed
   3. You will need to have the latest version of Kubectl installed 
   4. You will need to install AWS IAM Authenticator installed 
+  
+# AWS Policys for User
+  
+  * AutoScalingFullAccess
+	
+  * AmazonEKSClusterPolicy
+	
+  * AmazonEKSWorkerNodePolicy
+	
+  * AmazonVPCFullAccess
+	
+  * AmazonEKSServicePolicy
+	
+  * AmazonEKS_CNI_Policy
+	
+  * AmazonEC2FullAccess
