@@ -3,24 +3,24 @@ Here is a basic setup for a AWS Cluster using terraform scrips to automate the p
 
 # Start
 You will need to first setup your AWS Credentials using awscli commands on your terminal, the command you will use is:
-  aws configure
+* aws configure
 There you can take your access keys and secret keys provided by aws and have it stored within your system instead of on the scripts. This will be stored as a credentials file in your .aws folder and will communicate with terraform when you start running the scripts. 
 
 After you have configured your aws go into the directory of the terraform scripts and start with the following command:
 
-*terraform init
+* terraform init
 
 This command sets up terraform within your directory as you will see its created a folder where it will store and contain the versions of providers being used and modules, plugins and configurations files. To keep the structure as clean and easy to follow as possible I will be using terraforms module structure, which will makes things easier to follow.  
 
 Next do a Terraform plan which wont install or do anything but setup what resources that are going to be installed when we do the apply. Plans are required and saving them is recommended so that when terraform runs it knows what resources are being installed/deleted/updated.
 
-*terraform plan -out aws_eks.tfplan
+* terraform plan -out aws_eks.tfplan
 
 The first two commands will find any errors or permissions needed for you to fix before doing the apply, In my experiance terrform will find about 90% of any forseen errors that could cause harm when applying the plan. 
 
 Once everything is ready begin the install of your resources with the following command: 
 
-*terraform apply aws_eks.tfplan
+* terraform apply aws_eks.tfplan
 
 Terraform will then begin installing the resources based off the plan you created, it should be noted that this script will take over 10 mins plus or minus 1-2 minutes. This is because the EKS itself takes 10 minutes to actually create the cluster on AWS. 
 
