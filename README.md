@@ -1,5 +1,5 @@
 # Terraform
-Here are some simple terraform scripts to create the following below:
+Here are some simple terraform scripts to create the following below in AWS:
   1. EKS creation 
   2. NGINX 
   3. ECR
