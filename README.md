@@ -3,6 +3,7 @@ Here are some simple terraform scripts to create the following below in AWS:
   1. EKS creation 
   2. NGINX 
   3. ECR
+  4. EFS
 
 # Requirments
 You will need to have the required software installed on your system either on Linux or Windows: 
