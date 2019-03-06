@@ -23,7 +23,7 @@ how the operation is applied.
 Using an Amazon S3 will keep the state persisted throughout operations, it will also be easy access in teams if someone had to take over or make a change.
 
 # Amazon DynamoDB
-This service is a fully manage database which supports a wide array of workloads from documentation to applications. If we are enabling stating locking a dynamoDB table will be used for locking to prevent operations occuring on a single workspace environment. 
+This service is a fully manage database which supports a wide array of workloads from documentation to applications. If we are enabling stating locking a dynamoDB table will be used for locking to prevent operations occuring on a single workspace environment. But for testing purposes I would "comment" the "dynamoBD" script as the price for creating on and using it depends on the type of Capacity. 
 
 # Terraform Scripts 
 First we need to create the S3 bucket and DynamoDB using the s3 bucket tf file, once done you can the use the backend script to take your state and insert it into the bucket. 
