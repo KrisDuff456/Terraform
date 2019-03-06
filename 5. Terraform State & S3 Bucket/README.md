@@ -26,4 +26,19 @@ Using an Amazon S3 will keep the state persisted throughout operations, it will 
 This service is a fully manage database which supports a wide array of workloads from documentation to applications. If we are enabling stating locking a dynamoDB table will be used for locking to prevent operations occuring on a single workspace environment. 
 
 # Terraform Scripts 
-First we need to create the S3 bucket and DynamoDB using the
+First we need to create the S3 bucket and DynamoDB using the s3 bucket tf file, once done you can the use the backend script to take your state and insert it into the bucket. 
+
+# Permissions 
+The permissions the S3 bucket and DynamoDB will need to are below:
+
+  - s3:ListBucket on arn:aws:s3:::mybucket 
+  
+  - s3:GetObject on arn:aws:s3:::mybucket/path/to/my/key 
+  
+  - s3:PutObject on arn:aws:s3:::mybucket/path/to/my/key 
+  
+  - dynamodb:GetItem 
+  
+  - dynamodb:PutItem 
+  
+  - dynamodb:DeleteItem 
