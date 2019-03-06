@@ -4,6 +4,7 @@ Here are some simple terraform scripts to create the following below in AWS:
   2. NGINX 
   3. ECR
   4. EFS
+  5. Terraform State and S3 Bucket
 
 # Requirments
 You will need to have the required software installed on your system either on Linux or Windows: 
