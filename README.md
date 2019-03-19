@@ -5,6 +5,7 @@ Here are some simple terraform scripts to create the following below in AWS:
   3. ECR
   4. EFS
   5. Terraform State and S3 Bucket
+  6. AWS RDS
 
 # Requirments
 You will need to have the required software installed on your system either on Linux or Windows: 
@@ -28,3 +29,5 @@ Make sure the user your using has these policys attached to them so that they ca
   * AmazonEKS_CNI_Policy
 	
   * AmazonEC2FullAccess
+  
+  * AmazonRDSFullAccess
