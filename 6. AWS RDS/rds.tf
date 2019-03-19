@@ -29,7 +29,6 @@ resource "aws_rds_cluster" "aurora_cluster"{
 	
 	backup_retention_period		= "0"
 	preferred_backup_window		= "04:00-09:00"
-	db_subnet_group_name		= ""
 	
 	final_snapshot_identifier	= "{var.cluster_identifier}_aurora_db_cluster"
 	vpc_security_group_ids		= [ "${aws_security_group.aurora_sg.id}"]
